@@ -98,14 +98,15 @@ func generateIndex(tags []string) {
 }
 
 func generateTagFile(tag string) {
-	file, err := os.Create(tag)
+	name := fmt.Sprintf("%v.html", tag)
+	file, err := os.Create(name)
 	if err != nil {
 		log.Printf("Error: create %q tag file: %v", tag, err)
 		os.Exit(1)
 	}
 	defer file.Close()
 
-	fmt.Printf("generate: %v\n", tag)
+	fmt.Printf("generate: %v\n", name)
 	err = tmpl.ExecuteTemplate(file, "tag.html", map[string]any{
 		"Tag": tag,
 	})
