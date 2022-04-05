@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="go-import" content="deedles.dev/fyner git https://github.com/DeedleFake/fyner" />
+		<meta http-equiv="refresh" content="0;URL='https://pkg.go.dev/mod/deedles.dev/fyner'" />
 	</head>
 	<body>
 		Nothing to see here.

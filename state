@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="go-import" content="deedles.dev/state git https://github.com/DeedleFake/state" />
+		<meta http-equiv="refresh" content="0;URL='https://pkg.go.dev/mod/deedles.dev/state'" />
 	</head>
 	<body>
 		Nothing to see here.
