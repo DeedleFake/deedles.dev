@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="go-import" content="deedles.dev/state git https://github.com/DeedleFake/state" />
+	</head>
+	<body>
+		Nothing to see here.
+	</body>
+</html>
