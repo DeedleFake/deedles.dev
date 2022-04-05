@@ -1,0 +1,8 @@
+!CNAME
+!go.mod
+!go.sum
+!sync.go
+
+state
+fyner
+trayscale

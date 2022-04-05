@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{{ range $tag := .Tags }}
+			<meta name="go-import" content="deedles.dev/{{ $tag }} git https://github.com/DeedleFake/{{ $tag }}" />
+		{{ end }}
+	</head>
+	<body>
+		Nothing to see here.
+	</body>
+</html>
