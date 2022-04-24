@@ -6,3 +6,4 @@
 state
 fyner
 trayscale
+migrate
