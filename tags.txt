@@ -12,3 +12,4 @@ kawa
 errfunc
 mk
 ea
+syncutil
