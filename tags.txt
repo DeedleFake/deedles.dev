@@ -14,5 +14,5 @@ kawa
 errfunc
 mk
 ea
-syncutil
 ximage
+xsync
