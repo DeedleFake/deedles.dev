@@ -9,6 +9,7 @@ trayscale
 migration
 wl
 xdg
+moto
 wlr
 kawa
 errfunc
