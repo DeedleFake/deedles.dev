@@ -2,10 +2,12 @@
 !go.mod
 !go.sum
 !sync.go
+!404.html
 
 ea
 errfunc
 fyner
+gopakgen
 kawa
 migration
 mk
