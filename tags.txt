@@ -3,6 +3,7 @@
 !go.sum
 !sync.go
 !404.html
+!_config.yml
 
 ea
 errfunc
