@@ -8,9 +8,8 @@ import (
 	"html/template"
 	"log"
 	"os"
+	"slices"
 	"strings"
-
-	"golang.org/x/exp/slices"
 )
 
 var (
