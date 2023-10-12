@@ -16,6 +16,7 @@ moto
 ns
 pocketsafe
 ptt-fix
+rchivelinks
 state
 trayscale
 wl
