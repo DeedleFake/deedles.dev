@@ -10,6 +10,7 @@ errfunc
 fyner
 gopakgen
 kawa
+ki
 migration
 mk
 moto
