@@ -6,7 +6,7 @@ import (
 	"flag"
 	"fmt"
 	"log"
-	"none/tmpl"
+	"none/comp"
 	"os"
 	"slices"
 	"strings"
@@ -77,7 +77,7 @@ func generateIndex(tags []string) {
 	defer file.Close()
 
 	fmt.Println("generate: index.html")
-	err = tmpl.Index(tags).Render(context.Background(), file)
+	err = comp.Index(tags).Render(context.Background(), file)
 	if err != nil {
 		log.Printf("Error: execute index template: %v", err)
 		os.Exit(1)
@@ -94,7 +94,7 @@ func generateTagFile(tag string) {
 	defer file.Close()
 
 	fmt.Printf("generate: %v\n", name)
-	err = tmpl.Tag(tag).Render(context.Background(), file)
+	err = comp.Tag(tag).Render(context.Background(), file)
 	if err != nil {
 		log.Printf("Error: execute %q tag template: %v", tag, err)
 		os.Exit(1)

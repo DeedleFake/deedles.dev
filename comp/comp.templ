@@ -1,0 +1,37 @@
+package comp
+
+templ tag(name string) {
+	<meta name="go-import" content={ "deedles.dev/" + name + " git https://github.com/DeedleFake/" + name }/>
+}
+
+templ redirect(to templ.SafeURL) {
+	<meta http-equiv="refresh" content={ "0;URL='" + string(to) + "'" }/>
+}
+
+templ Tag(name string) {
+	<!DOCTYPE html>
+	<html>
+		<head>
+			@tag(name)
+			@redirect(templ.URL("https://pkg.go.dev/mod/deedles.dev/" + name))
+		</head>
+		<body>
+			<a href={ "https://pkg.go.dev/mod/deedles.dev/" + templ.URL(name) }>Nothing to see here.</a>
+		</body>
+	</html>
+}
+
+templ Index(tags []string) {
+	<!DOCTYPE html>
+	<html>
+		<head>
+			for _, name := range tags {
+				@tag(name)
+			}
+			@redirect("http://github.com/DeedleFake")
+		</head>
+		<body>
+			Nothing to see here.
+		</body>
+	</html>
+}
