@@ -1,0 +1,29 @@
+package tmpl
+
+templ Tag(tag string) {
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta name="go-import" content={ "deedles.dev/" + tag + " git https://github.com/DeedleFake/" + tag }/>
+			<meta http-equiv="refresh" content={ "0;URL='https://pkg.go.dev/mod/deedles.dev/" + tag + "'" }/>
+		</head>
+		<body>
+			<a href={ "https://pkg.go.dev/mod/deedles.dev/" + templ.URL(tag) }>Nothing to see here.</a>
+		</body>
+	</html>
+}
+
+templ Index(tags []string) {
+	<!DOCTYPE html>
+	<html>
+		<head>
+			for _, tag := range tags {
+				<meta name="go-import" content={ "deedles.dev/" + tag + " git https://github.com/DeedleFake/" + tag }/>
+			}
+			<meta http-equiv="refresh" content="0;URL='http://github.com/DeedleFake'"/>
+		</head>
+		<body>
+			Nothing to see here.
+		</body>
+	</html>
+}

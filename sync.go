@@ -2,25 +2,15 @@ package main
 
 import (
 	"bufio"
-	"embed"
+	"context"
 	"flag"
 	"fmt"
-	"html/template"
 	"log"
+	"none/tmpl"
 	"os"
 	"slices"
 	"strings"
 )
-
-var (
-	//go:embed tmpl
-	tmplFS embed.FS
-	tmpl   *template.Template
-)
-
-func init() {
-	tmpl = template.Must(template.ParseFS(tmplFS, "tmpl/*"))
-}
 
 func loadTags() (tags, ignore []string) {
 	ignore = []string{"tags.txt"}
@@ -87,9 +77,7 @@ func generateIndex(tags []string) {
 	defer file.Close()
 
 	fmt.Println("generate: index.html")
-	err = tmpl.ExecuteTemplate(file, "index.html", map[string]any{
-		"Tags": tags,
-	})
+	err = tmpl.Index(tags).Render(context.Background(), file)
 	if err != nil {
 		log.Printf("Error: execute index template: %v", err)
 		os.Exit(1)
@@ -106,9 +94,7 @@ func generateTagFile(tag string) {
 	defer file.Close()
 
 	fmt.Printf("generate: %v\n", name)
-	err = tmpl.ExecuteTemplate(file, "tag.html", map[string]any{
-		"Tag": tag,
-	})
+	err = tmpl.Tag(tag).Render(context.Background(), file)
 	if err != nil {
 		log.Printf("Error: execute %q tag template: %v", tag, err)
 		os.Exit(1)
