@@ -6,6 +6,7 @@
 !_config.yml
 
 checkcors
+dgutil
 ea
 errfunc
 fyner
