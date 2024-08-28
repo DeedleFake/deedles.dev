@@ -20,7 +20,9 @@ ns
 pocketsafe
 ptt-fix
 rchivelinks
+shaw
 state
+transparent
 trayscale
 wl
 wlr
