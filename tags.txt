@@ -9,6 +9,7 @@ checkcors
 dgutil
 ea
 errfunc
+extract
 fyner
 gopakgen
 kawa
