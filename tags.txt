@@ -27,6 +27,7 @@ transparent
 trayscale
 wl
 wlr
+xcontainer
 xdg
 ximage
 xiter
