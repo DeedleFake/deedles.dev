@@ -18,6 +18,7 @@ migration
 mk
 moto
 ns
+pictag
 pocketsafe
 ptt-fix
 rchivelinks
