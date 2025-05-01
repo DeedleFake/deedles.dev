@@ -25,6 +25,7 @@ rchivelinks
 shaw
 state
 transparent
+tray
 trayscale
 wl
 wlr
