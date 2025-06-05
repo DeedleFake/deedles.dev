@@ -11,6 +11,7 @@ ea
 errfunc
 extract
 fyner
+gir
 gopakgen
 kawa
 ki
@@ -20,6 +21,7 @@ moto
 ns
 pictag
 pocketsafe
+pson
 ptt-fix
 rchivelinks
 shaw
