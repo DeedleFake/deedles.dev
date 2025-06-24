@@ -29,6 +29,7 @@ state
 transparent
 tray
 trayscale
+trunic
 wl
 wlr
 xcontainer
