@@ -5,6 +5,7 @@
 !404.html
 !_config.yml
 
+aiadventure
 checkcors
 dgutil
 ea
@@ -29,6 +30,7 @@ state
 transparent
 tray
 trayscale
+traysync
 trunic
 wl
 wlr
